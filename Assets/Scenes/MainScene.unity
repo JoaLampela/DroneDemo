@@ -1116,6 +1116,10 @@ PrefabInstance:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 1656078677}
+    - target: {fileID: 5353801496789129621, guid: 1af42aa6d8a3a9d43b3f75b40fab9414, type: 3}
+      propertyPath: _liftForce
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8607568959887375696, guid: 1af42aa6d8a3a9d43b3f75b40fab9414, type: 3}
       propertyPath: m_Name
       value: Drone

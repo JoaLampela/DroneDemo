@@ -252,15 +252,6 @@ public class DroneController : MonoBehaviour
         _propellerBR.Rotate(Vector3.up, _spinBR * Time.deltaTime, Space.Self);
         _propellerBL.Rotate(Vector3.up, _spinBL * Time.deltaTime, Space.Self);
     }
-    
-    private Quaternion ClampLocalPitch(Quaternion q, float minPitch, float maxPitch)
-    {
-        Vector3 euler = q.eulerAngles;
-        if (euler.x > 180f) euler.x -= 360f;
-        euler.x = Mathf.Clamp(euler.x, minPitch, maxPitch);
-        q.eulerAngles = euler;
-        return q;
-    }
 
     private void HandleCollision(GameObject other)
     {
